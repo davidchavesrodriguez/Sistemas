@@ -96,6 +96,9 @@ function fNotas() {
 	echo
 	echo "NOTAS RÁPIDAS"
 	echo
+
+	sleep 3
+
 	read -p "Como queres chamar á nota? " nomeNota
 	if [ -e Notas ]
 	then
@@ -112,6 +115,7 @@ function fNotas() {
 		echo "Agora mesmo tes as seguintes notas gardadas "
 		echo
 		ls Notas
+		sleep 3
 	else
 		touch Notas/$nomeNota.txt
 		read -p "Escríbeme a tua idea: " contido
@@ -120,6 +124,7 @@ function fNotas() {
 		echo " Todo listo! Agora mesmo tes as seguintes notas gardadas: "
 		echo
 		ls Notas
+		sleep 3
 		echo
 	fi
 	# Crea a nota co nome e contido requerido. Se a nota xa existe, quéixase
@@ -145,6 +150,9 @@ do
         echo
         echo "5- Ocurréuseme algo. Déixame apuntalo!"
         echo
+
+	sleep 5
+
         read -p "Escolle o número da opción requerida: " opcion
         echo
 
